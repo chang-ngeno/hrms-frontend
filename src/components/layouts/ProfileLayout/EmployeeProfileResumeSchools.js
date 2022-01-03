@@ -8,7 +8,7 @@ export default function EmployeeProfileResumeSchools(props) {
     <>
       <Card fluid raised>
         <Card.Content>
-          <Card.Header>Okullar</Card.Header>
+          <Card.Header>Schools</Card.Header>
         </Card.Content>
         <Card.Content extra>
           <List style={{ marginTop: "5px" }} fluid vertical relaxed="very">
@@ -20,7 +20,7 @@ export default function EmployeeProfileResumeSchools(props) {
                   style={{ marginRight: "5px" }}
                 />
                 <List.Content>
-                  <List.Header>{item.schoolName} - ({item.startYear} - {(item.endYear != undefined && item.endYear != null && item.endYear != 0) ? item.endYear : "Devam Ediyor"})</List.Header>
+                  <List.Header>{item.schoolName} - ({item.startYear} - {(item.endYear != undefined && item.endYear != null && item.endYear != 0) ? item.endYear : "Continuing"})</List.Header>
                   <List.Description>
                     {item.schoolDepartment}
                   </List.Description>

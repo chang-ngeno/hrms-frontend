@@ -64,47 +64,47 @@ export default function EmployeeAccountDetails(props) {
         <Form className="ui form">
           <FormGroup widths="equal">
             <HRMSInput
-              label="Ad"
+              label="First Name"
               name="firstName"
-              placeholder="Ad"
+              placeholder="First Name"
               icon="user"
               iconPosition="left"
             />
             <HRMSInput
-              label="Soyad"
+              label="Surname"
               name="lastName"
-              placeholder="Soyad"
+              placeholder="Surname"
               icon="user"
               iconPosition="left"
             />
           </FormGroup>
           <HRMSInput
-              label="E-Posta"
+              label="E-Mail"
               name="email"
-              placeholder="E-Posta"
+              placeholder="E-Mail"
               icon="mail"
               iconPosition="left"
             />
           <FormGroup widths="equal">
             <HRMSInput
-              label="Doğum Yılı"
+              label="Birth Year"
               name="birthYear"
-              placeholder={`Doğum Yılı (1940-${ageLimit})`}
+              placeholder={`Birth Year (1940-${ageLimit})`}
               icon="birthday"
               iconPosition="left"
               type="number"
             />
             <HRMSDropdown
-              label="İş Pozisyonu"
+              label="Job position"
               name="positionId"
-              placeholder="İş Pozisyonu *"
+              placeholder="Job position *"
               options={positionOptions}
             />
           </FormGroup>
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Güncelle
+            Update
           </Button>
         </Form>
       </Formik>

@@ -35,7 +35,7 @@ export default function JobAdvertisementViewDetails({ jobAdvertisement }) {
             </List.Item>
             <List.Item>
               <Icon name="user" style={{ marginRight: "5px" }} color="grey" />
-              {jobAdvertisement.openPositionsAmount} Kişi
+              {jobAdvertisement.openPositionsAmount} Person
             </List.Item>
             <List.Item>
               <Icon name="calendar alternate outline" color="grey" />
@@ -52,7 +52,7 @@ export default function JobAdvertisementViewDetails({ jobAdvertisement }) {
               basic
               color="green"
             >
-              İlana Git
+              Go to Ad
             </Button>
             <JobAdvertisementFavoriteButton jobAdvertisementId={jobAdvertisement?.id}/>
           </div>

@@ -17,7 +17,7 @@ export default function PositionController() {
 
   const headerCells = [
     "Id",
-    "İş Pozisyonu Adı",
+    "Job position Name",
   ];
 
   var cells = [];

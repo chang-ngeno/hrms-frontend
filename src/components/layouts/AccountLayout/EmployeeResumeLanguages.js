@@ -67,20 +67,20 @@ export default function EmployeeResumeLanguages(props) {
         <Form className="ui form">
           <FormGroup widths="equal">
             <HRMSInput
-              label="Dil Adı"
+              label="Language Name"
               name="languageName"
-              placeholder="Dil Adı"
+              placeholder="Language Name"
             />
             <HRMSInput
-              label="Seviye"
+              label="Level"
               name="languageLevel"
-              placeholder="Seviye (1-5)"
+              placeholder="Level (1-5)"
             />
           </FormGroup>
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Ekle
+            Add
           </Button>
         </Form>
       </Formik>

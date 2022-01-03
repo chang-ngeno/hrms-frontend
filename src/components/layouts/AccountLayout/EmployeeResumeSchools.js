@@ -72,32 +72,32 @@ export default function EmployeeResumeSchools(props) {
       >
         <Form className="ui form">
           <HRMSInput
-            label="Okul Adı"
+            label="School Name"
             name="schoolName"
-            placeholder="Okul Adı"
+            placeholder="School Name"
             icon="university"
             iconPosition="left"
           />
           <HRMSInput
-            label="Bölüm"
+            label="Section"
             name="schoolDepartment"
-            placeholder="Bölüm"
+            placeholder="Section"
             icon="book"
             iconPosition="left"
           />
           <FormGroup widths="equal">
             <HRMSInput
-              label="Başlangıç Yılı"
+              label="Starting Year"
               name="startYear"
-              placeholder={`Başlangıç Yılı (1940-${currentYear})`}
+              placeholder={`Starting Year (1940-${currentYear})`}
               icon="calendar outline"
               iconPosition="left"
               type="number"
             />
             <HRMSInput
-              label="Bitiş Yılı"
+              label="End Year"
               name="endYear"
-              placeholder={`Bitiş Yılı (1940-${currentYear + 8})`}
+              placeholder={`End Year (1940-${currentYear + 8})`}
               icon="calendar outline"
               iconPosition="left"
               type="number"
@@ -106,7 +106,7 @@ export default function EmployeeResumeSchools(props) {
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Ekle
+            Add
           </Button>
         </Form>
       </Formik>

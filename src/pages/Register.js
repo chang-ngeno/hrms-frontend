@@ -14,11 +14,11 @@ import EmployerRegister from "../components/layouts/RegisterLayout/EmployerRegis
 export default function Register() {
   const tabs = [
     {
-      menuItem: "Çalışan",
+      menuItem: "Worker",
       render: () => <EmployeeRegister />,
     },
     {
-      menuItem: "İş Veren",
+      menuItem: "Employer",
       render: () => <EmployerRegister />,
     },
   ];
@@ -32,16 +32,16 @@ export default function Register() {
       >
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as="h1" color="teal" textAlign="center">
-            Kayıt Ol
+            Register
           </Header>
           <Segment stacked>
             <Tab panes={tabs} menu={{ secondary: true }} />
           </Segment>
           <Message>
             <h4>
-              Hesabınız zaten var mı?
+              Already have an account?
               <Link style={{ color: "#00b5ad" }} to="/login">
-                Giriş yapın!
+                Sign in!
               </Link>
             </h4>
           </Message>

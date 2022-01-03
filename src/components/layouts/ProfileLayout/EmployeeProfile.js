@@ -21,16 +21,16 @@ export default function EmployeeProfile(props) {
     <>
       <Grid.Row>
         <Grid.Column style={{ textAlign: "left" }} width={4}>
-          <h1>Çalışan Profili</h1>
+          <h1>Employee Profile</h1>
           <EmployeeProfileDetails user={user} resume={resume}/>
         </Grid.Column>
 
         <Grid.Column style={{ textAlign: "left" }} width={12}>
-          <h1>Özgeçmiş</h1>
+          <h1>Resume</h1>
           {resume == null ||
           resume == undefined ||
           JSON.stringify(resume) == {} ? (
-            <h3>Çalışanın özgeçmiş bilgisi bulunmuyor!</h3>
+            <h3>Employee has no resume information</h3>
           ) : (
             <EmployeeProfileResume resume={resume} />
           )}

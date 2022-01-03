@@ -39,26 +39,26 @@ export default function EmployeeAccountChangePassword(props) {
       >
         <Form className="ui form">
           <HRMSInput
-            label="Eski Şifre"
+            label="Old Password"
             name="oldPassword"
-            placeholder="Eski Şifre"
+            placeholder="Old Password"
             icon="lock"
             iconPosition="left"
             type="password"
           />
           <FormGroup widths="equal">
             <HRMSInput
-              label="Yeni Şifre"
+              label="New Password"
               name="newPassword"
-              placeholder="Yeni Şifre"
+              placeholder="New Password"
               icon="lock"
               iconPosition="left"
               type="password"
             />
             <HRMSInput
-              label="Yeni Şifre Tekrar"
+              label="New Password Again"
               name="newPasswordRetry"
-              placeholder="Eski Şifre"
+              placeholder="Old Password"
               icon="lock"
               iconPosition="left"
               type="password"
@@ -67,7 +67,7 @@ export default function EmployeeAccountChangePassword(props) {
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Şifreyi Değiştir
+            Change Password
           </Button>
         </Form>
       </Formik>

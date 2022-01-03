@@ -74,7 +74,7 @@ export default function JobAdvertisementFilter({ handleOnFilter }) {
 
   return (
     <>
-      <h1>Filtreler</h1>
+      <h1>Filters</h1>
       <Segment raised style={{ textAlign: "left", padding: "15px" }}>
         <Formik
           initialValues={initialValues}
@@ -84,20 +84,20 @@ export default function JobAdvertisementFilter({ handleOnFilter }) {
           <Form className="ui large form">
             <HRMSInput
               name="search"
-              placeholder="Ara"
+              placeholder="Search"
               icon="search"
               iconPosition="left"
             />
             <Divider clearing />
             <HRMSMultiDropdown
               name="positionIds"
-              placeholder="İş Pozisyonu"
+              placeholder="Job position"
               options={positionOptions}
             />
             <Divider hidden />
             <HRMSMultiDropdown
               name="cityIds"
-              placeholder="Şehir"
+              placeholder="City"
               multiple
               selection
               options={cityOptions}
@@ -105,7 +105,7 @@ export default function JobAdvertisementFilter({ handleOnFilter }) {
             <Divider hidden />
             <HRMSMultiDropdown
               name="workingTimeIds"
-              placeholder="Çalışma Şekli"
+              placeholder="Way of Working"
               multiple
               selection
               options={workingTimeOptions}
@@ -113,21 +113,21 @@ export default function JobAdvertisementFilter({ handleOnFilter }) {
             <Divider clearing />
             <HRMSInput
               name="minSalary"
-              placeholder="Min. Maaş"
+              placeholder="Min. Wage"
               icon="money"
               iconPosition="left"
               type="number"
             />
             <HRMSInput
               name="maxSalary"
-              placeholder="Maks. Maaş"
+              placeholder="Max. Wage"
               icon="money"
               iconPosition="left"
               type="number"
             />
 
             <Button fluid color="teal" size="large" style={{ marginTop:"35px" }} type="submit">
-              Filtrele
+              Filter
             </Button>
           </Form>
         </Formik>

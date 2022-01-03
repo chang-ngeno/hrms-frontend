@@ -8,7 +8,7 @@ export default function EmployeeProfileResumeJobExperiences(props) {
     <>
       <Card fluid raised>
         <Card.Content>
-          <Card.Header>İş Tecrübeleri</Card.Header>
+          <Card.Header>Work experiences</Card.Header>
         </Card.Content>
         <Card.Content extra>
           <List style={{ marginTop: "5  px" }} fluid vertical relaxed="very">

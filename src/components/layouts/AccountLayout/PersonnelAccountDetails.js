@@ -41,30 +41,30 @@ export default function EmployerAccountDetails(props) {
           <FormGroup widths="equal">
             <HRMSInput
               name="firstName"
-              label="Ad"
-              placeholder="Ad"
+              label="First Name"
+              placeholder="First Name"
               icon="user"
               iconPosition="left"
             />
 
             <HRMSInput
               name="lastName"
-              label="Soyad"
-              placeholder="Soyad"
+              label="Surname"
+              placeholder="Surname"
               icon="user"
               iconPosition="left"
             />
           </FormGroup>
           <HRMSInput
               name="email"
-              label="E-Posta"
-              placeholder="E-Posta"
+              label="E-Mail"
+              placeholder="E-Mail"
               icon="mail"
               iconPosition="left"
             />
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Güncelle
+            Update
           </Button>
         </Form>
       </Formik>

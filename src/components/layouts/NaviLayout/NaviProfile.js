@@ -15,7 +15,7 @@ export default function NaviProfile(props) {
         />
         <Dropdown
           pointing="top left"
-          text={!(""+props.name).includes("undefined") ? props.name : "Çıkış Yapılıyor..."}
+          text={!(""+props.name).includes("undefined") ? props.name : "Signing out..."}
         >
           <Dropdown.Menu>
             {

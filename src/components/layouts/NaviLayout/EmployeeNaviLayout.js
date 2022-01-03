@@ -7,9 +7,9 @@ export default function EmployeeNaviLayout(props) {
   const user = props.user
 
   const options = [
-    { to: "/account", text: "Hesap", icon: "cog" },
-    { to: `/profile/${props.user.userId}`, text: "Profil", icon: "user" },
-    { to: "/resume", text: "Özgeçmiş", icon: "newspaper" },
+    { to: "/account", text: "Account", icon: "cog" },
+    { to: `/profile/${props.user.userId}`, text: "Profile", icon: "user" },
+    { to: "/resume", text: "Resume", icon: "newspaper" },
   ]
   return (
     <>

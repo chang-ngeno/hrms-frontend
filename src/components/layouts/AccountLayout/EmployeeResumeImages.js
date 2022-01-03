@@ -61,7 +61,7 @@ export default function EmployeeResumeImages() {
       >
         <Form className="ui form">
           <HRMSInput
-            label="Resim"
+            label="Picture"
             name="file"
             icon="image"
             iconPosition="left"
@@ -70,7 +70,7 @@ export default function EmployeeResumeImages() {
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Ekle
+            Add
           </Button>
         </Form>
       </Formik>

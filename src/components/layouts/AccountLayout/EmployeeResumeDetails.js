@@ -43,9 +43,9 @@ export default function EmployeeResumeDetails(props) {
       >
         <Form className="ui form">
           <HRMSTextArea
-            label="Açıklama"
+            label="Description"
             name="description"
-            placeholder="Açıklama"
+            placeholder="Description"
           />
           <FormGroup widths="equal">
             <HRMSInput
@@ -66,7 +66,7 @@ export default function EmployeeResumeDetails(props) {
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Güncelle
+            Update
           </Button>
         </Form>
       </Formik>

@@ -21,14 +21,14 @@ export default function EmployerProfile(props) {
     <>
       <Grid.Row>
         <Grid.Column style={{ textAlign: "left" }} width={4}>
-          <h1>İş Veren Profili</h1>
+          <h1>Employer Profile</h1>
           <EmployerProfileDetails user={user}/>
         </Grid.Column>
 
         <Grid.Column style={{ textAlign: "left" }} width={12}>
-          <h1>İş İlanları</h1>
+          <h1>Business Classifieds</h1>
           {jobAdvertisements.length <= 0 ? (
-            <h3>İş Verenin henüz iş ilanı bilgisi bulunmuyor!</h3>
+            <h3>The Employer has no job posting information yet!</h3>
           ) : (
             <EmployerProfileJobAdvertisements jobAdvertisements = {jobAdvertisements}/>
           )}

@@ -12,13 +12,13 @@ export default function NotFound() {
       >
         <Grid.Column style={{ maxWidth: 400 }}>
           <h1 style={{ fontSize: 28 }}>
-            Aradığınız <span style={{ color: "#ffd45a" }}>sayfa</span>{" "}
-            bulunamadı!
+            You are looking for <span style={{ color: "#ffd45a" }}>page</span>{" "}
+            not found!
           </h1>
-          <p style={{ fontSize: 20 }}>Buralar çok ıssız 😕</p>
+          <p style={{ fontSize: 20 }}>Sorry, 😕</p>
 
           <Button color="teal" circular as={Link} to="/">
-            Anasayfa'ya Git
+            Go to Homepage
           </Button>
 
           <lottie-player

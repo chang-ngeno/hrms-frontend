@@ -36,7 +36,7 @@ export default function JobAdvertisementItem({ ...props }) {
             </List.Item>
             <List.Item>
               <Icon name="user" style={{ marginRight: "5px" }} color="grey" />
-              {props.item.openPositionsAmount} Kişi
+              {props.item.openPositionsAmount} Person
             </List.Item>
             <List.Item>
               <Icon name="calendar alternate outline" color="grey" />
@@ -53,7 +53,7 @@ export default function JobAdvertisementItem({ ...props }) {
               basic
               color="green"
             >
-              İlanı incele
+              Review the first name
             </Button>
             <JobAdvertisementFavoriteButton jobAdvertisementId={props.item.id} />
           </div>

@@ -17,27 +17,27 @@ export default function EmployeeResume(props) {
 
   const tabs = [
     {
-      menuItem: "Detaylar",
+      menuItem: "Detail",
       render: () => <EmployeeResumeDetails />,
     },
     {
-      menuItem: "Beceriler",
+      menuItem: "Skills",
       render: () => <EmployeeResumeAbilities />,
     },
     {
-      menuItem: "Diller",
+      menuItem: "Languages",
       render: () => <EmployeeResumeLanguages />,
     },
     {
-      menuItem: "İş Tecrübeleri",
+      menuItem: "Work experiences",
       render: () => <EmployeeResumeJobExperiences />,
     },
     {
-      menuItem: "Okullar",
+      menuItem: "Schools",
       render: () => <EmployeeResumeSchools />,
     },
     {
-      menuItem: "Resimler",
+      menuItem: "Pictures",
       render: () => <EmployeeResumeImages />,
     },
   ];

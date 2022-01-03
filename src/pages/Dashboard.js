@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useEffect } from "react";
 import { Segment, Tab } from "semantic-ui-react";
 
 import UserController from "../components/controllers/UserController";
@@ -9,7 +9,6 @@ import JobAdvertisementController from "../components/controllers/JobAdvertiseme
 import { useHistory } from "react-router";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import { useEffect } from "react";
 
 export default function Dashboard() {
   let history = useHistory();
@@ -23,23 +22,23 @@ export default function Dashboard() {
 
   const tabs = [
     {
-      menuItem: "Kullanıcılar",
+      menuItem: "Users",
       render: () => <UserController />,
     },
     {
-      menuItem: "Özgeçmiş",
+      menuItem: "Resume",
       render: () => <ResumeController />,
     },
     {
-      menuItem: "İş İlanı",
+      menuItem: "Job Postings",
       render: () => <JobAdvertisementController />,
     },
     {
-      menuItem: "İş Pozisyonu",
+      menuItem: "Job Position",
       render: () => <PositionController />,
     },
     {
-      menuItem: "Şehir",
+      menuItem: "City",
       render: () => <CityController />,
     },
   ];

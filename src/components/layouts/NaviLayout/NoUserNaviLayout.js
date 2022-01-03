@@ -9,7 +9,7 @@ export default function NoUserNaviLayout(props) {
         color="teal"
         to="/login"
         name="login"
-        visibleText="Giriş Yap"
+        visibleText="Login"
         hiddenText={<Icon name='sign-in' />}
         {...props}
       />

@@ -22,13 +22,13 @@ export default function ResumeController() {
 
   const headerCells = [
     "Id",
-    "Çalışan",
+    "Employee",
     "Github",
     "Linkedin",
-    "Beceriler",
-    "Okullar",
-    "İş Tecrübeleri",
-    "Diller",
+    "Skills",
+    "Schools",
+    "Work experiences",
+    "Languages",
     "",
   ];
 
@@ -90,7 +90,7 @@ export default function ResumeController() {
               setResumees([...resumees.filter((r) => r.id != resume.id)]);
             }}
           >
-            Özgeçmişi Sil
+            Resumei Delete Resume
           </Button>
         );
 

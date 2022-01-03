@@ -41,7 +41,7 @@ export default function JobAdvertisementFavoriteButton({ jobAdvertisementId }) {
         setIsFavorite(true)
       }
     } else {
-      toast.error("Lütfen giriş yapınız!");
+      toast.error("Please login!");
     }
   };
 

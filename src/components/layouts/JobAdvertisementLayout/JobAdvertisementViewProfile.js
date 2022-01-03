@@ -40,7 +40,7 @@ export default function JobAdvertisementViewProfile(props) {
             basic
             color="green"
           >
-            Profile git
+            Go to profile
           </Button>
         </Card.Content>
       </Card>

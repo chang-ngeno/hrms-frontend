@@ -72,32 +72,32 @@ export default function EmployeeResumeJobExperiences(props) {
       >
         <Form className="ui form">
           <HRMSInput
-            label="Şirket Adı"
+            label="Company Name"
             name="companyName"
-            placeholder="Şirket Adı"
+            placeholder="Company Name"
             icon="building"
             iconPosition="left"
           />
           <HRMSInput
-            label="İş Pozisyonu"
+            label="Job position"
             name="positionName"
-            placeholder="İş Pozisyonu"
+            placeholder="Job position"
             icon="briefcase"
             iconPosition="left"
           />
           <FormGroup widths="equal">
             <HRMSInput
-              label="Başlangıç Yılı"
+              label="Starting Year"
               name="startYear"
-              placeholder={`Başlangıç Yılı (1940-${currentYear})`}
+              placeholder={`Starting Year (1940-${currentYear})`}
               icon="calendar outline"
               iconPosition="left"
               type="number"
             />
             <HRMSInput
-              label="Bitiş Yılı"
+              label="End Year"
               name="endYear"
-              placeholder={`Bitiş Yılı (1940-${currentYear})`}
+              placeholder={`End Year (1940-${currentYear})`}
               icon="calendar outline"
               iconPosition="left"
               type="number"
@@ -106,7 +106,7 @@ export default function EmployeeResumeJobExperiences(props) {
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Ekle
+            Add
           </Button>
         </Form>
       </Formik>

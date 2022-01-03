@@ -23,7 +23,7 @@ export default function LogoutButton() {
 
       >
         <Button.Content visible>
-        Çıkış Yap
+        Sign out
 
         </Button.Content>
         <Button.Content hidden>

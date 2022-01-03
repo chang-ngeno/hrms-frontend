@@ -82,7 +82,7 @@ export default function Login() {
       >
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as="h1" color="teal" textAlign="center">
-            Giriş Yap
+            Login
           </Header>
           <Segment stacked>
             <Formik
@@ -93,7 +93,7 @@ export default function Login() {
               <Form className="ui form">
                 <HRMSInput
                   name="email"
-                  placeholder="E-Posta"
+                  placeholder="E-Mail"
                   icon="mail"
                   iconPosition="left"
                   type="email"
@@ -101,23 +101,23 @@ export default function Login() {
 
                 <HRMSInput
                   name="password"
-                  placeholder="Şifre"
+                  placeholder="Password"
                   icon="lock"
                   iconPosition="left"
                   type="password"
                 />
 
                 <Button type="submit" color="teal" fluid size="large">
-                  Giriş Yap
+                  Login
                 </Button>
               </Form>
             </Formik>
           </Segment>
           <Message>
             <h4>
-              Hesabınız yok mu?
+            Don't have an account?
               <Link style={{ color: "#00b5ad" }} to="/register">
-                Kayıt olun!
+                Sign up!
               </Link>
             </h4>
           </Message>

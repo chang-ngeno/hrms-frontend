@@ -16,9 +16,9 @@ export default function EmployerRegister() {
     companyName: Yup.string().required().min(1).max(100),
     website: Yup.string().required().min(1).max(100),
     email: Yup.string().email().required().min(1).max(100),
-    phone: Yup.string().required().min(13).max(13),
-    password: Yup.string().required().min(1).max(100),
-    passwordRetry: Yup.string().required().min(1).max(100),
+    phone: Yup.string().required().min(8).max(13),
+    password: Yup.string().required().min(5).max(100),
+    passwordRetry: Yup.string().required().min(5).max(100),
   });
 
   const initialValues = {
@@ -53,7 +53,7 @@ export default function EmployerRegister() {
         <Form className="ui form">
           <HRMSInput
             name="companyName"
-            placeholder="Şirket Adı"
+            placeholder="Company Name"
             icon="building"
             iconPosition="left"
           />
@@ -66,7 +66,7 @@ export default function EmployerRegister() {
 
           <HRMSInput
             name="email"
-            placeholder="E-Posta"
+            placeholder="E-Mail"
             icon="mail"
             iconPosition="left"
             type="email"
@@ -74,7 +74,7 @@ export default function EmployerRegister() {
 
           <HRMSPhoneInput
             name="phone"
-            placeholder="Telefon No"
+            placeholder="Telephone No"
             icon="phone"
             iconPosition="left"
           />
@@ -82,14 +82,14 @@ export default function EmployerRegister() {
           <FormGroup widths="equal">
             <HRMSInput
               name="password"
-              placeholder="Şifre"
+              placeholder="Password"
               icon="lock"
               iconPosition="left"
               type="password"
             />
             <HRMSInput
               name="passwordRetry"
-              placeholder="Şifre Tekrarı"
+              placeholder="Password Again"
               icon="lock"
               iconPosition="left"
               type="password"
@@ -97,7 +97,7 @@ export default function EmployerRegister() {
           </FormGroup>
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Kayıt Ol
+            Register
           </Button>
         </Form>
       </Formik>

@@ -26,14 +26,14 @@ export default function Navi() {
     <>
       <Link style={{ color: "#00b5ad" }} to="/home">
         <h1 className="logo" style={{ fontSize: 35, paddingTop: 10 }}>
-          HRMS
+          ChangSoft HRMS
         </h1>
       </Link>
 
       <Menu color="teal" size="large" secondary pointing stackable>
         <Container>
           <NaviTab
-            text="Anasayfa"
+            text="Home page"
             to="/home"
             active={url === "/home" || url === "/"}
           />

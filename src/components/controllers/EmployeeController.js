@@ -20,7 +20,7 @@ export default function EmployeeController() {
     });
   }, []);
 
-  const headerCells = ["Id", "Çalışan", "Doğum Yılı", "E-Posta", "", ""];
+  const headerCells = ["Id", "Employee", "Birth Year", "E-Mail", "", ""];
 
   const image = "https://react.semantic-ui.com/images/avatar/small/matthew.png";
 
@@ -95,7 +95,7 @@ export default function EmployeeController() {
             handleDelete(employee.userId)
             setEmployees([...employees.filter(e => e.userId != employee.userId)])
           }}>
-            Hesabı Sil
+            Delete the account
           </Button>
         );
         cells.push(cell);

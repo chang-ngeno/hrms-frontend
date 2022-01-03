@@ -43,15 +43,15 @@ export default function EmployerAccountDetails(props) {
         <Form className="ui form">
           <HRMSInput
             name="companyName"
-            label="Şirket Adı"
-            placeholder="Şirket Adı"
+            label="Company Name"
+            placeholder="Company Name"
             icon="building"
             iconPosition="left"
           />
           <HRMSInput
             name="email"
-            label="E-Posta"
-            placeholder="E-Posta"
+            label="E-Mail"
+            placeholder="E-Mail"
             icon="mail"
             iconPosition="left"
           />
@@ -66,8 +66,8 @@ export default function EmployerAccountDetails(props) {
 
             <HRMSPhoneInput
               name="phone"
-              label="Telefon No"
-              placeholder="Telefon No"
+              label="Telephone No"
+              placeholder="Telephone No"
               icon="phone"
               iconPosition="left"
             />
@@ -75,7 +75,7 @@ export default function EmployerAccountDetails(props) {
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Güncelle
+            Update
           </Button>
         </Form>
       </Formik>

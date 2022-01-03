@@ -93,15 +93,15 @@ export default function EmployerJobAdvertisement(props) {
   return (
     <>
       <div className="header" style={{ display: "flex", width: "100%" }}>
-        <h2>{`İş İlanı #${props.index + 1}`}</h2>
+        <h2>{`Job advertisement #${props.index + 1}`}</h2>
 
         {jobAdvertisement.confirmed ? (
           <h4 style={{ marginLeft: "auto" }}>
-            Onaylı <Icon name="check circle" />{" "}
+            Approved <Icon name="check circle" />{" "}
           </h4>
         ) : (
           <h4 style={{ marginLeft: "auto" }}>
-            Onay Bekliyor <Icon name="clock" />{" "}
+            Waiting for approval <Icon name="clock" />{" "}
           </h4>
         )}
       </div>
@@ -116,15 +116,15 @@ export default function EmployerJobAdvertisement(props) {
 
           <FormGroup widths="equal">
             <HRMSDropdown
-              label="İş Pozisyonu *"
+              label="Job position *"
               name="positionId"
-              placeholder="İş Pozisyonu *"
+              placeholder="Job position *"
               options={positionOptions}
             />
             <HRMSInput
-              label="Açık Pozisyon Sayısı *"
+              label="Number of Open Positions *"
               name="openPositionsAmount"
-              placeholder="Açık Pozisyon Sayısı *"
+              placeholder="Number of Open Positions *"
               icon="briefcase"
               iconPosition="left"
             />
@@ -132,32 +132,32 @@ export default function EmployerJobAdvertisement(props) {
 
           <FormGroup widths="equal">
             <HRMSDropdown
-              label="Şehir *"
+              label="City *"
               name="cityId"
-              placeholder="Şehir *"
+              placeholder="City *"
               options={cityOptions}
             />
             <HRMSDropdown
-              label="Çalışma Şekli *"
+              label="Way of Working *"
               name="workingTimeId"
-              placeholder="Çalışma Şekli *"
+              placeholder="Way of Working *"
               options={workingTimeOptions}
             />
           </FormGroup>
 
           <FormGroup widths="equal">
             <HRMSInput
-              label="Min. Maaş"
+              label="Min. Wage"
               name="minSalary"
-              placeholder="Min. Maaş"
+              placeholder="Min. Wage"
               icon="money"
               iconPosition="left"
               type="number"
             />
             <HRMSInput
-              label="Maks. Maaş"
+              label="Max. Wage"
               name="maxSalary"
-              placeholder="Maks. Maaş"
+              placeholder="Max. Wage"
               icon="money"
               iconPosition="left"
               type="number"
@@ -165,25 +165,25 @@ export default function EmployerJobAdvertisement(props) {
           </FormGroup>
 
           <HRMSInput
-            label="Son Başvuru Tarihi *"
+            label="Application deadline *"
             name="deadline"
-            placeholder="Son Başvuru Tarihi *"
+            placeholder="Application deadline *"
             icon="calendar alternate"
             iconPosition="left"
             type="date"
           />
 
           <HRMSTextArea
-            label="Açıklama *"
+            label="Description *"
             name="description"
-            placeholder="Açıklama *"
+            placeholder="Description *"
             icon="file text"
             iconPosition="left"
           />
 
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Güncelle
+            Update
           </Button>
         </Form>
       </Formik>
@@ -195,7 +195,7 @@ export default function EmployerJobAdvertisement(props) {
         fluid
         size="large"
       >
-        Sil
+        Delete
       </Button>
       <Divider clearing />
     </>

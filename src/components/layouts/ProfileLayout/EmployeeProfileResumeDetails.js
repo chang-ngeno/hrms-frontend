@@ -10,7 +10,7 @@ export default function EmployeeProfileResumeDetails(props) {
     <>
       <Card fluid raised>
         <Card.Content>
-          <Card.Header>Detaylar</Card.Header>
+          <Card.Header>Detail</Card.Header>
           <Card.Description>{resume?.description}</Card.Description>
         </Card.Content>
         <Card.Content extra>

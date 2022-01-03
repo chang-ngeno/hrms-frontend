@@ -8,7 +8,7 @@ export default function ListLoader({ list, height, text }) {
       {list.length <= 0 ? (
         <>
           <Dimmer active inverted>
-            <Loader size="huge">{text || "Yükleniyor"}</Loader>
+            <Loader size="huge">{text || "Loading"}</Loader>
           </Dimmer>
           <div style={{ height: (height || 100 )}}></div>
         </>

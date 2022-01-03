@@ -33,12 +33,12 @@ export default function EmployeeRegister() {
   const validationSchema = Yup.object().shape({
     firstName: Yup.string().required().min(1).max(25),
     lastName: Yup.string().required().min(1).max(20),
-    identityNo: Yup.string().required().min(11).max(11),
-    birthYear: Yup.number().required().min(1940).max(ageLimit),
+    identityNo: Yup.string().required().min(5).max(9),
+    birthYear: Yup.number().required().min(1900).max(ageLimit),
     positionId: Yup.number().required(),
     email: Yup.string().email().required().min(1).max(100),
-    password: Yup.string().required().min(1).max(100),
-    passwordRetry: Yup.string().required().min(1).max(100),
+    password: Yup.string().required().min(5).max(100),
+    passwordRetry: Yup.string().required().min(5).max(100),
   });
 
   const initialValues = {
@@ -76,38 +76,38 @@ export default function EmployeeRegister() {
           <FormGroup widths="equal">
             <HRMSInput
               name="firstName"
-              placeholder="Ad"
+              placeholder="First Name"
               icon="user"
               iconPosition="left"
             />
             <HRMSInput
               name="lastName"
-              placeholder="Soyad"
+              placeholder="Surname"
               icon="user"
               iconPosition="left"
             />
           </FormGroup>
           <HRMSInput
             name="identityNo"
-            placeholder="TC Kimlik No"
+            placeholder="National Identification Number"
             icon="id card"
             iconPosition="left"
           />
           <HRMSInput
             name="birthYear"
-            placeholder={`Doğum Yılı (1940-${ageLimit})`}
+            placeholder={`Birth Year (1940-${ageLimit})`}
             icon="birthday"
             iconPosition="left"
             type="number"
           />
           <HRMSDropdown
             name="positionId"
-            placeholder="İş Pozisyonu *"
+            placeholder="Job position *"
             options={positionOptions}
           />
           <HRMSInput
             name="email"
-            placeholder="E-Posta"
+            placeholder="E-Mail"
             icon="mail"
             iconPosition="left"
             type="email"
@@ -115,14 +115,14 @@ export default function EmployeeRegister() {
           <FormGroup widths="equal">
             <HRMSInput
               name="password"
-              placeholder="Şifre"
+              placeholder="Password"
               icon="lock"
               iconPosition="left"
               type="password"
             />
             <HRMSInput
               name="passwordRetry"
-              placeholder="Şifre Tekrarı"
+              placeholder="Password Again"
               icon="lock"
               iconPosition="left"
               type="password"
@@ -130,7 +130,7 @@ export default function EmployeeRegister() {
           </FormGroup>
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Kayıt Ol
+            Register
           </Button>
         </Form>
       </Formik>

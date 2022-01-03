@@ -6,11 +6,11 @@ import EmployerController from "./EmployerController";
 export default function UserController() {
   const tabs = [
     {
-      menuItem: "Çalışan",
+      menuItem: "Employee",
       render: () => <EmployeeController />
     },
     {
-      menuItem: "İş Veren",
+      menuItem: "View posting Employer",
       render: () => <EmployerController />
     },
   ];

@@ -19,11 +19,11 @@ export default function JobAdvertisementList({
   const [value, setValue] = useState(10);
 
   const paginations = [
-    { paginationName: "1 İlan", value: 1 },
-    { paginationName: "10 İlan", value: 10 },
-    { paginationName: "25 İlan", value: 25 },
-    { paginationName: "50 İlan", value: 50 },
-    { paginationName: "100 İlan", value: 100 },
+    { paginationName: "1 Advert", value: 1 },
+    { paginationName: "10 Advert", value: 10 },
+    { paginationName: "25 Advert", value: 25 },
+    { paginationName: "50 Advert", value: 50 },
+    { paginationName: "100 Advert", value: 100 },
   ];
 
   const paginationOptions = constantsMethods.objectsToOptions(
@@ -35,10 +35,10 @@ export default function JobAdvertisementList({
   return (
     <>
       <div className="header" style={{ display: "flex", width: "100%" }}>
-        <h1>İlanlar</h1>
+        <h1>Classifieds</h1>
         <span style={{ marginLeft: "auto", color: "grey" }}>
           {jobAdvertisements.length > 0
-            ? jobAdvertisements.length + " ilan bulundu"
+            ? jobAdvertisements.length + " ad found"
             : null}
         </span>
       </div>
@@ -65,7 +65,7 @@ export default function JobAdvertisementList({
           }}
           selection
           defaultValue={value}
-          text={"Sayfalama - " + value}
+          text={"Pagination - " + value}
           style={{ marginLeft: "auto" }}
           options={paginationOptions}
         />

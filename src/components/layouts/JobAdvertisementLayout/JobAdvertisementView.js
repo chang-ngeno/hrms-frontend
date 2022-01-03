@@ -24,12 +24,12 @@ export default function JobAdvertisementView({ ...props }) {
       <Grid style={{ marginTop: "40px", marginBottom: "25px" }}>
         <Grid.Row>
           <Grid.Column style={{ textAlign: "left" }} width={4}>
-            <h1>İş Veren</h1>
+            <h1>View posting Employer</h1>
             <JobAdvertisementViewProfile employer={jobAdvertisement.employer} />
           </Grid.Column>
 
           <Grid.Column style={{ textAlign: "left" }} width={12}>
-            <h1>İlan</h1>
+            <h1>Advert</h1>
             <JobAdvertisementViewDetails jobAdvertisement={jobAdvertisement} />
           </Grid.Column>
         </Grid.Row>

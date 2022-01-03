@@ -12,14 +12,14 @@ export default function NoJobAdvertisementsError(props) {
       >
         <Grid.Column style={{ maxWidth: 700 }}>
           <h2>
-            Görünüşe göre hiç iş ilanı bulunmuyor. <br/>Şimdi oluşturmak ister misiniz?
+            It seems that there are no job postings. <br/>Would you like to create now?
           </h2>
           <Button
             as={Link}
             to="/jobAdvertisement/create"
             primary
           >
-            Oluştur
+            Create
           </Button>
         </Grid.Column>
       </Grid>

@@ -23,7 +23,7 @@ export default function EmployerController() {
     });
   }, []);
 
-  const headerCells = ["Id", "Şirket", "Telefon No", "E-Posta", "", ""];
+  const headerCells = ["Id", "Company", "Telephone No", "E-Mail", "", ""];
 
   var cells = [];
 
@@ -100,7 +100,7 @@ export default function EmployerController() {
               ]);
             }}
           >
-            Hesabı Sil
+            Delete the account
           </Button>
         );
         cells.push(cell);

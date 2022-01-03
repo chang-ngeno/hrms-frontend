@@ -16,7 +16,7 @@ export default function CityController() {
 
   const headerCells = [
     "Id",
-    "Şehir Adı",
+    "City Name",
   ];
 
   var cells = []

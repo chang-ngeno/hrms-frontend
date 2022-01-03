@@ -19,13 +19,13 @@ export default function NoResumeError(props) {
       >
         <Grid.Column style={{ maxWidth: 700 }}>
           <h2>
-            Görünüşe göre Özgeçmişin bulunmuyor. <br/>Şimdi oluşturmak ister misin?
+            It looks like you don't have a CV. <br/>Would you like to create now??
           </h2>
           <Button
             primary
             onClick={() => createResume()}
           >
-            Oluştur
+            Create
           </Button>
         </Grid.Column>
       </Grid>

@@ -7,7 +7,7 @@ export default function PersonnelNaviLayout(props) {
   const user = props.user
 
   const options = [
-    { to: "/account", text: "Hesap", icon: "cog" },
+    { to: "/account", text: "Account", icon: "cog" },
     { to: "/dashboard", text: "Panel", icon: "pen square" },
   ]
   return (

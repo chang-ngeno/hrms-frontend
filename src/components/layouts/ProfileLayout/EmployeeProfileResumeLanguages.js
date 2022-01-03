@@ -8,7 +8,7 @@ export default function EmployeeProfileResumeLanguages(props) {
     <>
       <Card fluid raised>
         <Card.Content>
-          <Card.Header>Diller</Card.Header>
+          <Card.Header>Languages</Card.Header>
         </Card.Content>
         <Card.Content extra>
           <List style={{ marginTop: "5  px" }} fluid horizontal relaxed>
@@ -20,7 +20,7 @@ export default function EmployeeProfileResumeLanguages(props) {
                   color="grey"
                 />
                 <span style={{ fontSize: "16px", verticalAlign: "middle" }}>
-                  {item.languageName} - (Seviye: <span stlye={{ color:"grey" }}>{item.languageLevel})</span>
+                  {item.languageName} - (Level: <span stlye={{ color:"grey" }}>{item.languageLevel})</span>
                 </span>
               </List.Item>
             ))}

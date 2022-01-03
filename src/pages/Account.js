@@ -25,17 +25,17 @@ export default function Account() {
       content: [
         {
           name: "accountDetails",
-          text: "Hesap Ayrıntıları",
+          text: "Account Details",
           component: <EmployeeAccountDetails user={user.user} />,
         },
         {
           name: "changePassword",
-          text: "Şifreyi Değiştir",
+          text: "Change Password",
           component: <EmployeeAccountChangePassword user={user.user} />,
         },
         {
           name: "resume",
-          text: "Özgeçmişi Düzenle",
+          text: "Edit Resume",
           component: <EmployeeResume user={user.user} />,
         },
       ],
@@ -45,17 +45,17 @@ export default function Account() {
       content: [
         {
           name: "accountDetails",
-          text: "Hesap Ayrıntıları",
+          text: "Account Details",
           component: <EmployerAccountDetails user={user.user} />,
         },
         {
           name: "changePassword",
-          text: "Şifreyi Değiştir",
+          text: "Change Password",
           component: <EmployerAccountChangePassword user={user.user} />,
         },
         {
           name: "jobAdvertisements",
-          text: "İş İlanları",
+          text: "Job Postings",
           component: <EmployerJobAdvertisements user={user.user} />,
         }
       ],
@@ -65,12 +65,12 @@ export default function Account() {
       content: [
         {
           name:"accountDetails",
-          text:"Hesap Ayrıntıları",
+          text:"Account Details",
           component: <PersonnelAccountDetails user={user.user}  />
         },
         {
           name: "changePassword",
-          text: "Şifreyi Değiştir",
+          text: "Change Password",
           component: <PersonnelAccountChangePassword user={user.user} />,
         },
       ]
@@ -87,7 +87,7 @@ export default function Account() {
   return (
     <>
       <Grid style={{ marginTop: "40px", marginBottom: "25px" }}>
-        <h1>Hesap</h1>
+        <h1>Account</h1>
 
         <Grid.Row>
           <Grid.Column style={{ textAlign: "left" }} width={4}>

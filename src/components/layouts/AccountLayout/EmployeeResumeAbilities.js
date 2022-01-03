@@ -57,13 +57,13 @@ export default function EmployeeResumeAbilities(props) {
       >
         <Form className="ui form">
           <HRMSInput
-            label="Beceri Adı"
+            label="Skill Name"
             name="abilityName"
-            placeholder="Beceri Adı"
+            placeholder="Skill Name"
           />
           <br />
           <Button type="submit" color="teal" fluid size="large">
-            Ekle
+            Add
           </Button>
         </Form>
       </Formik>

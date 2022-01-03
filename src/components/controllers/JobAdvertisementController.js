@@ -40,10 +40,10 @@ export default function JobAdvertisementController() {
 
   const headerCells = [
     "Id",
-    "Şirket",
-    "İş Pozisyonu",
+    "Company",
+    "Job position",
     "Pozisyon Sayısı",
-    "Şehir",
+    "City",
     "Maaş",
     "Yayın Tarihi",
     "Bitiş Tarihi",
@@ -121,7 +121,7 @@ export default function JobAdvertisementController() {
               ]);
             }}
           >
-            İlanı Sil
+            Delete Ad
           </Button>
         );
         cells.push(cell);

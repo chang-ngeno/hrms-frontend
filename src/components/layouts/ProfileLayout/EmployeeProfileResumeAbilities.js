@@ -8,7 +8,7 @@ export default function EmployeeProfileResumeAbilities(props) {
     <>
       <Card fluid raised>
         <Card.Content>
-          <Card.Header>Beceriler</Card.Header>
+          <Card.Header>Skills</Card.Header>
         </Card.Content>
         <Card.Content extra>
           <List style={{ marginTop: "5  px" }} fluid horizontal relaxed>
