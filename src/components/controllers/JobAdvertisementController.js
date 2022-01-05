@@ -27,13 +27,13 @@ export default function JobAdvertisementController() {
     {
       state: true,
       color: "green",
-      text: "Onaylanmış",
+      text: "approved",
       icon: "check circle",
     },
     {
       state: false,
       color: "teal",
-      text: "Onayla",
+      text: "Approve",
       icon: "pencil",
     },
   ];
@@ -42,11 +42,11 @@ export default function JobAdvertisementController() {
     "Id",
     "Company",
     "Job position",
-    "Pozisyon Sayısı",
+    "Number of Positions",
     "City",
-    "Maaş",
-    "Yayın Tarihi",
-    "Bitiş Tarihi",
+    "Wage",
+    "Release date",
+    "End Date",
     "",
     "",
   ];

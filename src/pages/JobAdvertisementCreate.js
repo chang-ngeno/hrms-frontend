@@ -89,10 +89,10 @@ export default function JobAdvertisementCreate() {
   return (
     <>
       <Grid
-        style={{ height: "80vh" }}
+        // style={{ height: "80vh" }}
         verticalAlign="middle"
       >
-        <Grid.Column style={{ maxWidth: 800 }}>
+        <Grid.Column style={{ maxWidth: 800, marginBottom: 20 }}>
           <Header as="h1" color="teal" textAlign="center">
           Create a Job Posting
           </Header>
@@ -183,7 +183,7 @@ export default function JobAdvertisementCreate() {
       <img
         src={undraw_jobAdvertisementCreate}
         width="560"
-        style={{ position: "fixed", bottom: 350, right: 10, zIndex: -1 }}
+        style={{ position: "fixed", top: 150, right: 10, zIndex: -1 }}
       />
     </>
   );

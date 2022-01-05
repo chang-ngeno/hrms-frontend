@@ -31,3 +31,7 @@
   font-size: 64px;
   transform: translateY(500%);
 }
+
+.element{
+  min-height: 70%;
+}

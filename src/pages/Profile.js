@@ -19,8 +19,8 @@ export default function Profile() {
       .getById(userId)
       .then((result) => {
         userService
-        .getUserTypeByEmail(result.data.data.email)
-        .then((response) => setUser(response.data.data))
+        .getUserTypeByEmail(result.data.email)
+        .then((response) => setUser(response.data))
       });
   }, []);
 

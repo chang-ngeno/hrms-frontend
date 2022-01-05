@@ -77,10 +77,10 @@ export default function Login() {
     <>
       <Grid
         textAlign="center"
-        style={{ height: "80vh" }}
+        // style={{ height: "80vh" }}
         verticalAlign="middle"
       >
-        <Grid.Column style={{ maxWidth: 450 }}>
+        <Grid.Column style={{ maxWidth: 450, marginBottom: 20 }}>
           <Header as="h1" color="teal" textAlign="center">
             Login
           </Header>
@@ -125,8 +125,8 @@ export default function Login() {
       </Grid>
       <img
         src={undraw_login}
-        width="560"
-        style={{ position: "fixed", bottom: 350, right: 10, zIndex: -1 }}
+        width="560" //  bottom: 350,
+        style={{ position: "fixed", top:150, right: 10, zIndex: -1 }}
       />
     </>
   );

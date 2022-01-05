@@ -27,10 +27,10 @@ export default function Register() {
     <>
       <Grid
         textAlign="center"
-        style={{ height: "80vh" }}
-        verticalAlign="middle"
+        // style={{ height: "80vh" }}
+        // verticalAlign="middle"
       >
-        <Grid.Column style={{ maxWidth: 450 }}>
+        <Grid.Column style={{ maxWidth: 450, marginBottom: 20 }}>
           <Header as="h1" color="teal" textAlign="center">
             Register
           </Header>
@@ -50,7 +50,7 @@ export default function Register() {
       <img
         src={undraw_register}
         width="560"
-        style={{ position: "fixed", bottom: 350, right: 10, zIndex: -1 }}
+        style={{ position: "fixed", top: 150, right: 10, zIndex: -1 }}
       />
     </>
   );
