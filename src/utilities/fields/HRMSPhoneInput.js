@@ -2,11 +2,11 @@ import { useField } from "formik";
 import React from "react";
 import { FormField, Input } from "semantic-ui-react";
 
-import ReactPhoneInput from "react-phone-input-2";
+// import ReactPhoneInput from "react-phone-input-2";
 
 export default function HRMSPhoneInput({ ...props }) {
   const [field, meta] = useField(props);
-  const { name, value, onChange, onBlur } = field;
+  const { value, onChange, onBlur } = field;
 
   let formatPhoneNumber = (str) => {
     let cleaned = ("" + str).replace(/\D/g, "");

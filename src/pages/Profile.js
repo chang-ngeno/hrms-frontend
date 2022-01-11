@@ -14,13 +14,12 @@ export default function Profile() {
 
   useEffect(() => {
     const userService = new UserService();
-
     userService
       .getById(userId)
       .then((result) => {
         userService
-        .getUserTypeByEmail(result.data.email)
-        .then((response) => setUser(response.data))
+        .getUserTypeByEmail(result.data.data.email)
+        .then((response) => setUser(response.data.data))
       });
   }, []);
 

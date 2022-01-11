@@ -50,6 +50,7 @@ export default function Register() {
       <img
         src={undraw_register}
         width="560"
+        alt="Undraw register"
         style={{ position: "fixed", top: 150, right: 10, zIndex: -1 }}
       />
     </>

@@ -13,6 +13,9 @@ import Register from "./Register";
 import JobAdvertisementCreate from "./JobAdvertisementCreate";
 import Footer from "./Footer";
 
+import Position from "./admin/Position";
+import WorkingTime from "./admin/WorkingTime";
+
 import JobAdvertisementView from "../components/layouts/JobAdvertisementLayout/JobAdvertisementView";
 
 import { ToastContainer } from "react-toastify"
@@ -50,6 +53,11 @@ export default function App() {
 
             <Route exact path="/jobAdvertisement/create"><JobAdvertisementCreate /></Route>
             <Route exact path="/jobAdvertisement/:id" component={JobAdvertisementView} />
+
+            <Route exact path="/position/create" component={Position} />
+            <Route exact path="/workingTime" component={WorkingTime} />
+
+            <Route exact path="/personnel" component={WorkingTime} />
 
             <Route exact path="/profile/:userId" component={Profile} />
 

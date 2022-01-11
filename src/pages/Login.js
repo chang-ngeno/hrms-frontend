@@ -38,11 +38,11 @@ export default function Login() {
       type: "employee",
       function: (data) => {
         dispatch(getResume(data.userId)).then((response) => {
-          dispatch(getAllAbilities(response.id))
-          dispatch(getAllLanguages(response.id))
-          dispatch(getAllSchools(response.id))
-          dispatch(getAllJobExperiences(response.id))
-          dispatch(getAllImages(response.id))
+          dispatch(getAllAbilities(response?.id))
+          dispatch(getAllLanguages(response?.id))
+          dispatch(getAllSchools(response?.id))
+          dispatch(getAllJobExperiences(response?.id))
+          dispatch(getAllImages(response?.id))
         })
       }
     },

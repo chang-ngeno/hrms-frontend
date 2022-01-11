@@ -30,13 +30,13 @@ export default function EmployeeController() {
     {
       state: true,
       color: "green",
-      text: "Doğrulanmış",
+      text: "Verified",
       icon: "check circle",
     },
     {
       state: false,
       color: "teal",
-      text: "Doğrula",
+      text: "Verify",
       icon: "pencil",
     },
   ];

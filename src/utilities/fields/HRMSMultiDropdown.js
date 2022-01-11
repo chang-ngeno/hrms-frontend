@@ -3,7 +3,7 @@ import React from "react";
 import { FormField, Select } from "semantic-ui-react";
 
 export default function HRMSMultiDropdown({ ...props }) {
-  const [field, meta, helpers] = useField(props);
+  const [field, helpers] = useField(props);
   const { setValue, setTouched, setError } = helpers;
 
   const setFieldProps = (value) => {

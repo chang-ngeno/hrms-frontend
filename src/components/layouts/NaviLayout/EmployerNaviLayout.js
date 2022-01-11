@@ -10,6 +10,7 @@ export default function EmployerNaviLayout(props) {
     { to: "/account", text: "Account", icon: "cog" },
     { to: `/profile/${props.user.userId}`, text: "Profile", icon: "user" },
     { to: "/jobAdvertisement/create", text: "Create Job Advertisement", icon: "plus" },
+    { to: "/personnel", text: "Personnel", icon: "users" }
   ]
   return (
     <>

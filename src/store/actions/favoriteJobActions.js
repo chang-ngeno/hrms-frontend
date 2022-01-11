@@ -1,4 +1,3 @@
-import UserService from "../../services/userService";
 import FavoriteJobService from "../../services/favoriteJobService";
 
 import * as constantsMethods from "../../constants/constantsMethods";
@@ -24,7 +23,7 @@ export function remove(id) {
 }
 
 export const addFavorite = (value) => async (dispatch) => {
-  return await favoriteJobService.save(value).then((response) => {
+  return favoriteJobService.save(value).then((response) => {
     constantsMethods.displayToast(response.data.success, response.data.message);
     dispatch(add(response.data.data));
     return response.data.data

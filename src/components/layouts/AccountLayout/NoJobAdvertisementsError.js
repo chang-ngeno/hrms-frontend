@@ -7,7 +7,7 @@ export default function NoJobAdvertisementsError(props) {
     <>
       <Grid
         textAlign="center"
-        style={{ height: "20vh" }}
+        //style={{ height: "20vh" }}
         verticalAlign="middle"
       >
         <Grid.Column style={{ maxWidth: 700 }}>

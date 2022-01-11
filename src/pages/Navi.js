@@ -12,7 +12,7 @@ import NaviLayout from "../components/layouts/NaviLayout/NaviLayout";
 import NoUserNaviLayout from "../components/layouts/NaviLayout/NoUserNaviLayout";
 
 export default function Navi() {
-  let history = useHistory()  
+  let history = useHistory()
   const user = useSelector((state) => state.user);
   const [url, setUrl] = useState(window.location.pathname);
 
@@ -36,6 +36,16 @@ export default function Navi() {
             text="Home page"
             to="/home"
             active={url === "/home" || url === "/"}
+          />
+          <NaviTab
+            text="Working time"
+            to="/workingTime"
+            active={url === "/workingTime"}
+          />
+          <NaviTab
+            text="Position"
+            to="/position/create"
+            active={url === "/position/create"}
           />
 
           <Menu.Item position="right">

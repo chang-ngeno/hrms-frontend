@@ -28,8 +28,8 @@ export default function EmployeeProfile(props) {
         <Grid.Column style={{ textAlign: "left" }} width={12}>
           <h1>Resume</h1>
           {resume == null ||
-          resume == undefined ||
-          JSON.stringify(resume) == {} ? (
+          resume === undefined ||
+          JSON.stringify(resume) === {} ? (
             <h3>Employee has no resume information</h3>
           ) : (
             <EmployeeProfileResume resume={resume} />

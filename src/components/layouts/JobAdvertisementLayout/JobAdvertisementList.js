@@ -42,34 +42,40 @@ export default function JobAdvertisementList({
             : null}
         </span>
       </div>
-      <ListLoader list={jobAdvertisements} height={465}/>
+      {jobAdvertisements.length <= 0
+        ? "No job advertisement ads found!"
+        :
+        <>
+          <ListLoader list={jobAdvertisements} height={465} />
 
-      {jobAdvertisements?.map((item) => (
-        <JobAdvertisementItem key={item.id} item={item} />
-      ))}
+          {jobAdvertisements?.map((item) => (
+            <JobAdvertisementItem key={item.id} item={item} />
+          ))}
 
-      <div style={{ display: "flex", width: "100%" }}>
-        <Pagination
-          firstItem={null}
-          lastItem={null}
-          activePage={activePage}
-          onPageChange={handlePagination}
-          totalPages={totalPages}
-        />
+          <div style={{ display: "flex", width: "100%" }}>
+            <Pagination
+              firstItem={null}
+              lastItem={null}
+              activePage={activePage}
+              onPageChange={handlePagination}
+              totalPages={totalPages}
+            />
 
-        <Dropdown
-          onChange={(e, data) => {
-            setActivePage(1)
-            setValue(data.value);
-            handlePaginationCount(data.value);
-          }}
-          selection
-          defaultValue={value}
-          text={"Pagination - " + value}
-          style={{ marginLeft: "auto" }}
-          options={paginationOptions}
-        />
-      </div>
+            <Dropdown
+              onChange={(e, data) => {
+                setActivePage(1)
+                setValue(data.value);
+                handlePaginationCount(data.value);
+              }}
+              selection
+              defaultValue={value}
+              text={"Pagination - " + value}
+              style={{ marginLeft: "auto" }}
+              options={paginationOptions}
+            />
+          </div>
+        </>
+      }
     </>
   );
 }
