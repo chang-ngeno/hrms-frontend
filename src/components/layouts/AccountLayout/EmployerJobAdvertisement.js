@@ -112,7 +112,7 @@ export default function EmployerJobAdvertisement(props) {
         onSubmit={onSubmit}
       >
         <Form className="ui form">
-          <HRMSRadio type="checkbox" name="active" toggle label="Aktif" />
+          <HRMSRadio type="checkbox" name="active" toggle label="Active" />
 
           <FormGroup widths="equal">
             <HRMSDropdown

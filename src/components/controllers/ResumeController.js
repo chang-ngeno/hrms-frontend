@@ -90,7 +90,7 @@ export default function ResumeController() {
               setResumees([...resumees.filter((r) => r.id != resume.id)]);
             }}
           >
-            Resumei Delete Resume
+            Delete Resume
           </Button>
         );
 

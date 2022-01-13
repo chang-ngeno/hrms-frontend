@@ -19,11 +19,11 @@ export default function JobAdvertisementList({
   const [value, setValue] = useState(10);
 
   const paginations = [
-    { paginationName: "1 Advert", value: 1 },
-    { paginationName: "10 Advert", value: 10 },
-    { paginationName: "25 Advert", value: 25 },
-    { paginationName: "50 Advert", value: 50 },
-    { paginationName: "100 Advert", value: 100 },
+    { paginationName: "1 Adverts", value: 1 },
+    { paginationName: "10 Adverts", value: 10 },
+    { paginationName: "25 Adverts", value: 25 },
+    { paginationName: "50 Adverts", value: 50 },
+    { paginationName: "100 Adverts", value: 100 },
   ];
 
   const paginationOptions = constantsMethods.objectsToOptions(

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, List } from "semantic-ui-react";
 
 import { Formik, Form } from "formik";
@@ -17,14 +17,19 @@ export default function EmployeeResumeAbilities(props) {
     abilityName: Yup.string().required().max(30),
   });
 
+  // let [submitting, setSubmitting] = useState(false);
   const initialValues = {
     abilityName: "",
+    isSubmitting: false,
   };
 
-  const onSubmit = (values) => {
+  const onSubmit = (values, {setSubmitting, resetForm}) => {
+    setSubmitting(true);
+    resetForm(initialValues);
     values.resumeId = resume.resume.id;
     dispatch(addAbility(values))
     dispatch(getAllAbilities(resume.resume.id))
+    setSubmitting(false);
   };
 
   return (

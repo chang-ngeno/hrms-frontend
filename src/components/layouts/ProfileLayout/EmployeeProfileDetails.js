@@ -14,7 +14,7 @@ export default function EmployeeProfileDetails({user, resume}) {
         />
         <Card.Content>
           <Card.Header>{user?.firstName + " " + user?.lastName}</Card.Header>
-          <Card.Meta>{user?.position?.positionName} • {age} yaşında</Card.Meta>
+          <Card.Meta>{user?.position?.positionName} • {age} years old</Card.Meta>
           <Card.Description>
             <List fluid vertical relaxed style={{ marginTop:"15px" }}>
               <List.Item>

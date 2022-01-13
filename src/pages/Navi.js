@@ -37,16 +37,6 @@ export default function Navi() {
             to="/home"
             active={url === "/home" || url === "/"}
           />
-          <NaviTab
-            text="Working time"
-            to="/workingTime"
-            active={url === "/workingTime"}
-          />
-          <NaviTab
-            text="Position"
-            to="/position/create"
-            active={url === "/position/create"}
-          />
 
           <Menu.Item position="right">
             {Object.keys(user.user).length === 0 ? (

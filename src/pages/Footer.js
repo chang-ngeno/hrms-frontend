@@ -32,7 +32,7 @@ export default function Footer() {
                 <List.Item as={Link} to="/">
                   Home page
                 </List.Item>
-                <List.Item as={Link} to="/dashboard">
+                {/* <List.Item as={Link} to="/dashboard">
                   Panel
                 </List.Item>
                 <List.Item as={Link} to="/login">
@@ -40,7 +40,7 @@ export default function Footer() {
                 </List.Item>
                 <List.Item as={Link} to="/register">
                   Register
-                </List.Item>
+                </List.Item> */}
               </List>
             </Grid.Column>
             <Grid.Column width={3}>

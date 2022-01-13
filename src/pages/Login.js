@@ -62,7 +62,7 @@ export default function Login() {
 
   const onSubmit = (values) => {
     dispatch(login(values)).then((response) => {
-      if(response != null){
+      if (response != null) {
         dispatch(getAllByUserEmail(values.email))
         const userState = userStates.find(s => s.type === response.user.userType)
         userState.function(response)
@@ -80,53 +80,57 @@ export default function Login() {
         // style={{ height: "80vh" }}
         verticalAlign="middle"
       >
-        <Grid.Column style={{ maxWidth: 450, marginBottom: 20 }}>
-          <Header as="h1" color="teal" textAlign="center">
-            Login
-          </Header>
-          <Segment stacked>
-            <Formik
-              initialValues={initialValues}
-              validationSchema={validationSchema}
-              onSubmit={onSubmit}
-            >
-              <Form className="ui form">
-                <HRMSInput
-                  name="email"
-                  placeholder="E-Mail"
-                  icon="mail"
-                  iconPosition="left"
-                  type="email"
-                />
+        {userStates.length <= 0
+          ? pushToHome()
+          :
+          <Grid.Column style={{ maxWidth: 450, marginBottom: 20 }}>
+            <Header as="h1" color="teal" textAlign="center">
+              Login
+            </Header>
+            <Segment stacked>
+              <Formik
+                initialValues={initialValues}
+                validationSchema={validationSchema}
+                onSubmit={onSubmit}
+              >
+                <Form className="ui form">
+                  <HRMSInput
+                    name="email"
+                    placeholder="E-Mail"
+                    icon="mail"
+                    iconPosition="left"
+                    type="email"
+                  />
 
-                <HRMSInput
-                  name="password"
-                  placeholder="Password"
-                  icon="lock"
-                  iconPosition="left"
-                  type="password"
-                />
+                  <HRMSInput
+                    name="password"
+                    placeholder="Password"
+                    icon="lock"
+                    iconPosition="left"
+                    type="password"
+                  />
 
-                <Button type="submit" color="teal" fluid size="large">
-                  Login
-                </Button>
-              </Form>
-            </Formik>
-          </Segment>
-          <Message>
-            <h4>
-            Don't have an account?
-              <Link style={{ color: "#00b5ad" }} to="/register">
-                Sign up!
-              </Link>
-            </h4>
-          </Message>
-        </Grid.Column>
+                  <Button type="submit" color="teal" fluid size="large">
+                    Login
+                  </Button>
+                </Form>
+              </Formik>
+            </Segment>
+            <Message>
+              <h4>
+                Don't have an account?
+                <Link style={{ color: "#00b5ad" }} to="/register">
+                  Sign up!
+                </Link>
+              </h4>
+            </Message>
+          </Grid.Column>
+        }
       </Grid>
       <img
         src={undraw_login}
         width="560" //  bottom: 350,
-        style={{ position: "fixed", top:150, right: 10, zIndex: -1 }}
+        style={{ position: "fixed", top: 150, right: 10, zIndex: -1 }}
       />
     </>
   );
